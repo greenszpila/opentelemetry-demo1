@@ -19,7 +19,15 @@ Helm's [documentation](https://helm.sh/docs/) to get started.
 **Please note that this chart is not supported for clusters running on arm64
 architecture, such as kind/minikube running on Apple Silicon.**
 
-## Install the Chart
+## Deploy otel demo app in gh codespace
+
+Create gh codespace: https://github.com/features/codespaces 
+
+Install kind and create kind cluster
+```console
+chmod +x ./scripts/01-install-kind.sh
+./scripts/01-install-kind.sh
+```
 
 Add OpenTelemetry Helm repository:
 
