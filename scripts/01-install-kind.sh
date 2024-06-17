@@ -11,4 +11,4 @@ sudo mv ./kind /usr/local/bin/kind
 kind --version
 
 # Create KinD cluster
-kind create cluster --name otel-target-allocator-talk
+kind create cluster --name otel-demo
