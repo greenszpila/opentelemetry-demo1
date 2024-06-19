@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 global:
-  cluster: k8s-otel-eks1
+  cluster: k8s-otel-demo
   customSecretName: newrelic-key-secret
   customSecretLicenseKey: newrelic-key-secret
   
