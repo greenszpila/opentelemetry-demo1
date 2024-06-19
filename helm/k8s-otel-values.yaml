@@ -4,7 +4,7 @@
 global:
   cluster: k8s-otel-demo
   customSecretName: newrelic-key-secret
-  customSecretLicenseKey: newrelic-key-secret
+  customSecretLicenseKey: new_relic_license_key
   
 kube-state-metrics:
   # kube-state-metrics.enabled -- Install the [`kube-state-metrics` chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics) from the stable helm charts repository.
