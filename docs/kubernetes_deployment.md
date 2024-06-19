@@ -129,7 +129,8 @@ curl -L -o k8s-otel-values.yaml https://raw.githubusercontent.com/greenszpila/op
 Create a key secret in newrelic namespace
 
 ```console
-kubectl create secret generic newrelic-key-secret --from-literal=new_relic_license_key='<NEW_RELIC_LICENSE_KEY>'
+kubectl create namespace newrelic
+kubectl create secret generic newrelic-key-secret -n newrelic --from-literal=new_relic_license_key='<NEW_RELIC_LICENSE_KEY>'
 ```
 
 Install this chart using this Helm repository:
