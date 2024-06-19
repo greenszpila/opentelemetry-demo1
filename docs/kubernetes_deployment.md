@@ -123,7 +123,7 @@ Install the New Relic Kubernetes integration (be sure to add your New Relic
 Download values file
 
 ```console
-curl -L -o k8s-otel-values.yaml https://raw.githubusercontent.com/greenszpila/tf-minikube-otel-demo/master/otel/k8s-otel-values.yaml
+curl -L -o k8s-otel-values.yaml https://raw.githubusercontent.com/greenszpila/opentelemetry-demo1/master/helm/k8s-otel-values.yaml
 ```
 
 Install this chart using this Helm repository:
