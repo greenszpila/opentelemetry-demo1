@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 global:
   cluster: k8s-otel-eks1
-  customSecretName: nr-license-key
-  customSecretLicenseKey: nr-license-key
+  customSecretName: newrelic-key-secret
+  customSecretLicenseKey: newrelic-key-secret
   
 kube-state-metrics:
   # kube-state-metrics.enabled -- Install the [`kube-state-metrics` chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-state-metrics) from the stable helm charts repository.
