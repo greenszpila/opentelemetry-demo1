@@ -118,6 +118,21 @@ Install the New Relic Kubernetes integration (be sure to add your New Relic
  --set newrelic-prometheus-agent.lowDataMode=true
 ```
 
+## Install new k8s-otel integration (Optional) 
+
+Download values file
+
+```console
+curl -L -o k8s-otel-values.yaml https://raw.githubusercontent.com/greenszpila/tf-minikube-otel-demo/master/otel/k8s-otel-values.yaml
+```
+
+Install this chart using this Helm repository:
+
+```console
+helm repo add newrelic https://helm-charts.newrelic.com
+helm upgrade nr-k8s-otel-collector newrelic/nr-k8s-otel-collector -f k8s-otel-values.yaml -n newrelic --create-namespace --install
+```
+
 ## Helm Chart Parameters
 
 Chart parameters are separated in 4 general sections:
