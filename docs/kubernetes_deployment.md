@@ -59,6 +59,20 @@ instead:
 ```console
 helm upgrade --install newrelic-otel open-telemetry/opentelemetry-demo --values ./helm/values.yaml --set opentelemetry-collector.config.exporters.otlp.endpoint="otlp.eu01.nr-data.net:4317"
 ```
+## Enable productcatalogueservice feature flag bug
+
+Download json file. You can edit it and switch on other feature flags to generate bugs for other services in `"defaultVariant": "on"` 
+
+```console
+curl -o demo.flagd_failure.json https://raw.githubusercontent.com/bpschmitt/opentelemetry-demo-old/workshop/helm/demo.flagd_failure.json
+```
+
+Enable flag by editing config map or just passing this json config to the cm:
+
+```
+kubectl create configmap newrelic-otel-flagd-config --from-file=demo.flagd.json=demo.flagd_failure.json -o yaml --dry-run=client | kubectl apply -f -
+```
+
 
 ## Install Prometheus Integrations (Optional)
 
