@@ -108,6 +108,7 @@ helm repo add newrelic https://helm-charts.newrelic.com
 
 Install the New Relic Kubernetes integration (be sure to add your New Relic
  license key and K8s cluster name):
+IMPORTANT: make sure that the <K8S_CLUSTER_NAME> is matching with the `processors.resources.attributes.key:k8s.cluster.name.value:<K8sS_CLUSTER_NAME>`
 
 ```console
  helm upgrade --install newrelic-bundle newrelic/nri-bundle \
