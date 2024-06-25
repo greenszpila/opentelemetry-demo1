@@ -23,6 +23,11 @@ architecture, such as kind/minikube running on Apple Silicon.**
 
 Create gh codespace: https://github.com/features/codespaces 
 
+Start minikube 
+```console
+minikube start --memory 12000 --cpus 4 --force --container-runtime=containerd --kubernetes-version 1.28.9 -p otel
+```
+
 Install kind and create kind cluster
 ```console
 chmod +x ./scripts/01-install-kind.sh
